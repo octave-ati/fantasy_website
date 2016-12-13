@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fantasy Website</title>
+    <%= csrf_meta_tags %>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <header class="topbar">
+    <section class="container">
+      <button type="button" class="btn btn-lg btn-warning">LOGIN</button>
+      <button type="button" class="btn btn-lg btn-warning">SIGN UP</button>
+    </section>
+  </header>
+  <body class="<%= controller_name%> <%= action_name %>">
+    <nav class="navbar navbar-dropdown navigation-top" role="navigation">
+      <div class='container'>
+        <img src="/assets/fantasy3.png" alt="fantasy_logo">
+        <ul class="nav nav-pills pull-right">
+          <li class="nav-item"><a class="nav-link link" href="#">HOME</a></li>
+          <li class="nav-item"><a class="nav-link link" href="#">ARTICLES</a></li>
+          <li class="nav-item"><a clas="nav-link link" href="#">POWER RANKINGS</a></li>
+          <li class="nav-item"><a class="nav-link link" href="#">FANTASY</a></li>
+          <li class="nav-item"><a class="nav-link link" href="#">PREMIUM ACCESS</a></li>
+        </ul>
+      </div>
+    </nav>
+    <%= yield %>
+  </body>
+</html>
