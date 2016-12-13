@@ -22,26 +22,19 @@
   font-style: normal;
 }
 
-header { 
-
-height: 70px;
-padding: 12px;
-text-align: right;
-border-bottom:1px solid #f9b200;
+body {
+background: #D9D9D9
 }
 
-
 .btn-lg, .btn-group-lg > .btn {
-    margin: auto 0.8rem;
+    
     font-size: 1.7rem;
     font-family: 'Demonized', sans-serif;
 }
 
-.navigation_bar {
-  height: 80px;
-  border-bottom:1px solid #f9b200;
+.navbar {
+  background: transparent;
 }
-
 
 .nav a {
   font-family: 'Oswald', sans-serif;
@@ -54,38 +47,29 @@ border-bottom:1px solid #f9b200;
 #mycarousel {
   padding: 30px;
   width: 100%;
-  border-bottom:1px solid #f9b200;
 }
 
 .carousel-inner > .item > img {
   margin: 0 auto;
 }
 
-body {
-  
-background: black url(/assets/bg.jpg) fixed no-repeat center center;
-height: 100%;
-background-size: 100% 100%;
-}
 
 .headline {  
-  color: white;
   float: left;
   
   h1 {
-    border-bottom: 1px solid #f9b200;
+    
     padding: 10px;
   }
 
   h4 { padding: 5px;
-    text-decoration: underline;}
-
-  img {
-    display: block;
-    margin: 0 auto;
-    padding-top: 10px;
+    text-decoration: underline;
+    
   }
-
+  
+  img {
+    margin-top: -2rem;
+  }
 }
 
 article {
@@ -98,5 +82,4 @@ article {
   font-family: 'Oswald', sans-serif;
   font-size: 1.6rem;
 }
-
 
