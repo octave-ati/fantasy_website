@@ -17,21 +17,28 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand"><img src="/assets/fantasy3.png" alt="fantasy_logo"></a>
-          
-            <button type="button" class="btn btn-lg btn-warning navbar-btn">LOGIN</button>
-            <button type="button" class="btn btn-lg btn-warning navbar-btn">SIGN UP</button>
+          <%= link_to root_path, class: 'navbar-brand' do %>
+            <i class="fa fa-firefox"></i>
+            E-Sports
+          <%end%>
         </div>
+        <div class="navbar-header pull-right">
+          <%= link_to "Log In", root_path, class: "btn btn-default navbar-btn"%>
+          <%= link_to "Sign Up", root_path, class: "btn btn-default navbar-btn"%>
+        </div>
+        
         <div class="collapse navbar-collapse" id="main-nav-collapse">
           <ul class="nav navbar-nav">
-            <li class="nav-item"><a class="nav-link link" href="#">HOME</a></li>
-            <li class="nav-item"><a class="nav-link link" href="#">ARTICLES</a></li>
-            <li class="nav-item"><a clas="nav-link link" href="#">POWER RANKINGS</a></li>
-            <li class="nav-item"><a class="nav-link link" href="#">FANTASY</a></li>
-            <li class="nav-item"><a class="nav-link link" href="#">PREMIUM ACCESS</a></li>
-        </ul>
+            <li><%= link_to "Home", root_path%></li>
+            <li><%= link_to "Articles", root_path %></li>
+            <li><%= link_to "Power Rankings", root_path %></li>
+            <li><%= link_to "Fantasy", root_path %></li>
+            <li><%= link_to "Premium", root_path %></li>
+          </ul>
+        </div>
+        
       </div>
-      <div class="navbar"
+      
     </nav>
   </header>
   <body class="<%= controller_name%> <%= action_name %>">
