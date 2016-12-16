@@ -1,0 +1,56 @@
+/*
+Error: Invalid CSS after "  background: ": expected expression (e.g. 1px, bold), was ";"
+        on line 135 of /home/ubuntu/workspace/fantasy/app/assets/stylesheets/application.css.scss
+
+130:   margin-bottom: 1rem;
+131: }
+132: 
+133: #fantasy-container {
+134:   height: 19.5rem;
+135:   background: ;
+136: }
+137: 
+138: #fantasy_img {
+139:   display:table;
+140:   margin: 0rem auto;
+
+Backtrace:
+/home/ubuntu/workspace/fantasy/app/assets/stylesheets/application.css.scss:135
+/usr/local/rvm/gems/ruby-2.3.3@fantasy/gems/sass-3.4.22/lib/sass/scss/parser.rb:1189:in `expected'
+/usr/local/rvm/gems/ruby-2.3.3@fantasy/gems/sass-3.4.22/lib/sass/script/lexer.rb:229:in `expected!'
+/usr/local/rvm/gems/ruby-2.3.3@fantasy/gems/sass-3.4.22/lib/sass/script/parser.rb:704:in `assert_expr'
+/usr/local/rvm/gems/ruby-2.3.3@fantasy/gems/sass-3.4.22/lib/sass/script/parser.rb:75:in `parse'
+/usr/local/rvm/gems/ruby-2.3.3@fantasy/gems/sass-3.4.22/lib/sass/scss/parser.rb:1051:in `sass_script'
+/usr/local/rvm/gems/ruby-2.3.3@fantasy/gems/sass-3.4.22/lib/sass/scss/parser.rb:897:in `value!'
+/usr/local/rvm/gems/ruby-2.3.3@fantasy/gems/sass-3.4.22/lib/sass/scss/parser.rb:769:in `block in try_declaration'
+/usr/local/rvm/gems/ruby-2.3.3@fantasy/gems/sass-3.4.22/lib/sass/scss/parser.rb:1165:in `rethrow'
+/usr/local/rvm/gems/ruby-2.3.3@fantasy/gems/sass-3.4.22/lib/sass/scss/parser.rb:782:in `try_declaration'
+/usr/local/rvm/gems/ruby-2.3.3@fantasy/gems/sass-3.4.22/lib/sass/scss/parser.rb:711:in `declaration_or_ruleset'
+/usr/local/rvm/gems/ruby-2.3.3@fantasy/gems/sass-3.4.22/lib/sass/scss/parser.rb:676:in `block_child'
+/usr/local/rvm/gems/ruby-2.3.3@fantasy/gems/sass-3.4.22/lib/sass/scss/parser.rb:668:in `block_contents'
+/usr/local/rvm/gems/ruby-2.3.3@fantasy/gems/sass-3.4.22/lib/sass/scss/parser.rb:657:in `block'
+/usr/local/rvm/gems/ruby-2.3.3@fantasy/gems/sass-3.4.22/lib/sass/scss/parser.rb:649:in `ruleset'
+/usr/local/rvm/gems/ruby-2.3.3@fantasy/gems/sass-3.4.22/lib/sass/scss/parser.rb:675:in `block_child'
+/usr/local/rvm/gems/ruby-2.3.3@fantasy/gems/sass-3.4.22/lib/sass/scss/parser.rb:668:in `block_contents'
+/usr/local/rvm/gems/ruby-2.3.3@fantasy/gems/sass-3.4.22/lib/sass/scss/parser.rb:125:in `stylesheet'
+/usr/local/rvm/gems/ruby-2.3.3@fantasy/gems/sass-3.4.22/lib/sass/scss/parser.rb:41:in `parse'
+/usr/local/rvm/gems/ruby-2.3.3@fantasy/gems/sass-3.4.22/lib/sass/engine.rb:406:in `_to_tree'
+/usr/local/rvm/gems/ruby-2.3.3@fantasy/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+/usr/local/rvm/gems/ruby-2.3.3@fantasy/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
+/usr/local/rvm/gems/ruby-2.3.3@fantasy/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/usr/local/rvm/gems/ruby-2.3.3@fantasy/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/local/rvm/gems/ruby-2.3.3@fantasy/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
+/usr/local/rvm/gems/ruby-2.3.3@fantasy/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/local/rvm/gems/ruby-2.3.3@fantasy/gems/sass-3.4.22/lib/sass/plugin.rb:82:in `update_stylesheets'
+/usr/local/rvm/gems/ruby-2.3.3@fantasy/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
+/usr/local/rvm/gems/ruby-2.3.3@fantasy/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/usr/local/rvm/gems/ruby-2.3.3@fantasy/gems/sass-3.4.22/lib/sass/exec/base.rb:52:in `parse'
+/usr/local/rvm/gems/ruby-2.3.3@fantasy/gems/sass-3.4.22/lib/sass/exec/base.rb:19:in `parse!'
+/usr/local/rvm/gems/ruby-2.3.3@fantasy/gems/sass-3.4.22/bin/scss:13:in `<top (required)>'
+/usr/local/rvm/gems/ruby-2.3.3@fantasy/bin/scss:22:in `load'
+/usr/local/rvm/gems/ruby-2.3.3@fantasy/bin/scss:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"  background: \": expected expression (e.g. 1px, bold), was \";\"\A         on line 135 of /home/ubuntu/workspace/fantasy/app/assets/stylesheets/application.css.scss\A \A 130:   margin-bottom: 1rem;\A 131: }\A 132: \A 133: #fantasy-container {\A 134:   height: 19.5rem;\A 135:   background: ;\A 136: }\A 137: \A 138: #fantasy_img {\A 139:   display:table;\A 140:   margin: 0rem auto;"; }

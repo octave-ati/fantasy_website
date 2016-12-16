@@ -17,13 +17,16 @@
 @import "bootstrap";
 
 @font-face {
-  font-family: 'Demonized';
-  src: font-url('Demonized.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Myriad';
+    src: url('/assets/myriad_pro_condensed.otf') format('truetype');
 }
-
 body {
+  background: #000428; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #000428 , #004e92); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #000428 , #004e92); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #f5f5f5;
+  font-family: 'Myriad', serif;
+  font-size: 1.7rem;
 }
 
 .navbar {
@@ -45,7 +48,7 @@ body {
 .navbar-default .navbar-nav > li > a {
     color: #f5f5f5;
     float: none;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-family: "Oswald", sans-serif;
     &:hover{
       color: #FFDC00;
@@ -72,34 +75,40 @@ body {
 }
 
 #mycarousel {
-  padding: 30px;
   width: 100%;
-  background: #000428; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #000428 , #004e92); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #000428 , #004e92); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 2rem;
+  padding-bottom: 0;
  }
 
 .carousel-inner > .item > img {
   margin: 0 auto;
 }
 
+.card-container {
+    padding: 1rem;
+    padding-bottom: 0;
+    border: solid 8px #dddddd;
+    background: #ffffff;
+    border-radius: 4px;
+    color: black;
+    h2 {
+      font-weight: 700;
+      margin-top: 1rem;
+    }
+    
+}
 
+h1.text-center.card-container{
+  font-weight:700;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
 .headline {  
   float: left;
-  
-  h1 {
-    
-    padding: 10px;
-  }
-
-  h4 { padding: 5px;
-    text-decoration: underline;
-    
-  }
-  
-  img {
-    margin-top: -2rem;
-  }
+ 
+ p {
+   padding-bottom: 0;
+ } 
 }
 
 article {
@@ -107,12 +116,53 @@ article {
   display: inline-block;
 }
 
+.thumbnail {
+    height: 9.6rem;
+    float: left;
+    margin: auto;
+    margin-right: 1rem;
+}
+
 .rmbtn {
   float: right;
   font-family: 'Oswald', sans-serif;
   font-size: 1.6rem;
+  margin-bottom: 1rem;
 }
 
+#fantasy-container {
+  height: 19.6rem;
+  background: url(/assets/fantasy_img.jpg) no-repeat center center;
+  margin-bottom: 1rem;
+  position: relative;
+  background-size: 100% 100%;
+}
+
+#fantasy_img {
+  display:table;
+  margin: 0rem auto;
+  height: 19.5rem;
+  margin-bottom: 1rem;
+}
+
+.bottom_title {
+  color: black;
+  position: absolute;
+  bottom: 0;
+  width:100%;
+  font-weight: 900;
+  background: rgba(255,255,255,0.57);
+  margin-bottom: 0;
+}
+
+.image-container {
+  margin-bottom: 1.5rem;
+}
+
+.logo {
+  height:3.3rem;
+  margin-right: 1rem;
+}
 @media (min-width: 768px)
 {
   .navbar-nav {

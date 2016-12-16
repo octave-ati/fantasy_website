@@ -1,33 +1,49 @@
-<section class ="container-fluid" id="mycarousel">
-  <div class="container">
+<section class ="container" id="mycarousel">
+  <div class="container card-container">
     <%= carousel_for(["/assets/carousel1.jpg","/assets/carousel2.jpg","/assets/carousel3.jpg","/assets/carousel4.jpg"]) %>
   </div>
 </section>
-<div class="container-fluid" id="presentation">
-  <section class="container">
-    <div class="row marketing headline">
-      <section class="col-lg-6">
-        <h1 class="text-center"> New Articles </h1>
-          <article>
-            <h4> Power rankings for S3 are out now </h4>
-            <p> Ipsum grab'em by the pussy Trump FR, It US french military strike ALep Syria Lol CS GO Battlefield Test I like to Clinton Bernie Sanders OP</p>
-            <button type="button" class="btn btn-md btn-warning rmbtn">Read More</button>
-          </article>
-        <article>
-          <h4> Power rankings for S3 are out now </h4>
-          <p> Ipsum grab'em by the pussy Trump FR, It US french military strike ALep Syria Lol CS GO Battlefield Test I like to Clinton Bernie Sanders OP</p>
-          <button type="button" class="btn btn-md btn-warning rmbtn">Read More</button>
-        </article>
-        <article>
-          <h4> Power rankings for S3 are out now </h4>
-          <p> Ipsum grab'em by the pussy Trump FR, It US french military strike ALep Syria Lol CS GO Battlefield Test I like to Clinton Bernie Sanders OP</p>
-          <button type="button" class="btn btn-md btn-warning rmbtn">Read More</button>
-        </article> 
-      </section>
-      <section class="col-lg-6">
-        <h1 class="text-center"> Fantasy </h1>
-        <img src="assets/fantasy_img.jpg" alt="fantasy" id="fantasy_img">          
-      </section>
-    </div>
-  </section>
-</div>
+
+<section class="container" id="presentation">
+  <div class="row marketing headline">
+    <section class="col-lg-6">
+      <h1 class="text-center card-container">Headlines</h1>
+      <article class="card-container">
+        <h2><img src="assets/LOL_logo.png" alt="lol_logo" class="logo">Power rankings for S3 are out now </h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit laudantium quae necessitatibus recusandae nostrum facere atque quis reiciendis aspernatur itaque? Deserunt, accusantium accusamus commodi laborum enim rem unde vel laudantium?Ipsum grab'em by the pussy Trump FR, It US french military strike ALep Syria Lol CS GO Battlefield Test I like to Clinton Bernie Sanders</p>
+        <button type="button" class="btn btn-md btn-warning rmbtn">Read More</button>
+      </article>
+      <article class="card-container">
+        <h2><img src="assets/OW_logo.png" alt="Overwatch_logo" class="logo">Overwatch teams S2 roundup</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, aut, doloremque, debitis amet voluptatum similique molestias nemo fugiat est obcaecati laudantium eaque sapiente autem nisi repellat deleniti accusamus repudiandae quam.Ipsum grab'em by the pussy Trump FR, It US french military strike ALep Syria Lol CS GO Battlefield Test I like to Clinton Bernie Sanders OP</p>
+        <button type="button" class="btn btn-md btn-warning rmbtn">Read More</button>
+      </article>
+      <article class="card-container">
+        <h2><img src="assets/CSGO_logo.jpg" alt="CSGO_logo" class="logo">Will C9 survive after Manic's Resignation?</h2>
+        <img src="assets/C9_logo.png" alt="lol_logo" class="thumbnail">
+        <p>Ipsum grab'em by the pussy Trump FR, It US french military strike ALep Syria Lol CS GO Battlefield Test I like to Clinton Bernie Sanders OP Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, saepe obcaecati voluptatibus perferendis! Error, fugiat, illum, voluptates, ipsa quidem aliquam</p>
+        <button type="button" class="btn btn-md btn-warning rmbtn">Read More</button>
+      </article> 
+    </section>
+    <section class="col-lg-6">
+      <h1 class="text-center card-container"> Fantasy </h1>
+      <div class="card-container image-container">
+        <%= link_to root_path do%>
+        <section id="fantasy-container">
+          <h1 class="bottom_title text-center">Join the 1$ Perfect Fantasy Contest</h1>
+        </section>
+        <%end%>
+      </div>
+      <article class="card-container">
+        <h2><img src="assets/LOL_logo.png" alt="lol_logo" class="logo">Is Faker still a top pick?</h2>
+        <p>Ipsum grab'em by the pussy Trump FR, It US french military strike ALep Syria Lol CS GO Battlefield Test I like to Clinton Bernie Sanders OP Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, saepe obcaecati voluptatibus perferendis! Error, fugiat, illum, voluptates, ipsa quidem aliquam laborum asperiores maiores tempora nam tempore quo perferendis dignissimos assumenda.</p>
+        <button type="button" class="btn btn-md btn-warning rmbtn">Read More</button>
+      </article> 
+      <article class="card-container">
+        <h2><img src="assets/OW_logo.png" alt="Overwatch_logo" class="logo">OW Fantasy top picks of the month</h2>
+        <p>Ipsum grab'em by the pussy Trump FR, It US french military strike ALep Syria Lol CS GO Battlefield Test I like to Clinton Bernie Sanders OP Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, saepe obcaecati voluptatibus perferendis! Error, fugiat, illum, voluptates, ipsa quidem aliquam laborum asperiores maiores tempora nam tempore quo perferendis dignissimos assumenda.</p>
+        <button type="button" class="btn btn-md btn-warning rmbtn">Read More</button>
+      </article> 
+    </section>
+  </div>
+</section>
