@@ -29,8 +29,14 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-#Use FontAwesome for Logo
+# Use FontAwesome for Logo
 gem 'font-awesome-sass'
+
+# Use CKEditor for article creation
+gem 'ckeditor'
+
+# Use paperclip for article file integration
+gem 'paperclip'
 
 
 # Use Capistrano for deployment
