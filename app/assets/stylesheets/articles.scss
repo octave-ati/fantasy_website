@@ -9,3 +9,18 @@
     font-size: 3rem;
   }
 }
+
+article.card-container {
+  font-size: 2rem;
+  font-family: "Helvetica", sans-serif;
+  
+  h2 {
+    border-bottom: 1px solid black;
+    padding: 1rem 2rem 2rem 2rem;
+    font-family: 'museo_slab500', "Helvetica", sans-serif;
+  }
+  
+  p {
+    padding: 1rem;
+  }
+}
