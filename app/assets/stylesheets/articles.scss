@@ -10,13 +10,16 @@
       font-size: 3rem;
     }
   }
-  .ck-field {
+  #cke_article_body {
     color: black;
   }
   article.card-container {
     font-size: 2rem;
     font-family: "Helvetica", sans-serif;
     
+    .btn {
+      margin-bottom: 1rem;
+    }
     h2 {
       border-bottom: 1px solid black;
       padding: 1rem 2rem 2rem 2rem;

@@ -9,8 +9,8 @@
       <%= article.body.html_safe %>
       <%= link_to 'Read More', article, class: "btn btn-md btn-warning rmbtn" %>
       <% if can? :manage, Article %>
-      <%= link_to 'Edit', edit_article_path(article) %>
-      <%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %>
+      <%= link_to 'Edit', edit_article_path(article), class: "btn btn-md btn-danger" %>
+      <%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-md btn-danger" %>
     <%end%>
     </article>
     <% if article != @articles.last %>
@@ -18,6 +18,6 @@
     <% end %>
   <% end %>
   <% if can? :manage, Article %>
-    <%= link_to 'New Article', new_article_path %>  
+    <%= link_to 'New Article', new_article_path, class:"btn btn-lg btn-success" %>  
   <% end %>
 </section>

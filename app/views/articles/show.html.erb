@@ -3,10 +3,11 @@
   <article class="card-container">
     <header><h2><%= @article.title%></h2></header>
     <%= @article.body.html_safe %>
-  </article>
- 
-  <% if can? :manage, Article %>
-    <%= link_to 'Edit', edit_article_path(@article) %>
+    <% if can? :manage, Article %>
+    <%= link_to 'Edit', edit_article_path(@article), class: "btn btn-md btn-danger" %>
+    
   <%end%>
-  <%= link_to 'Return to main article page', articles_path %>
+  </article>
+  <%= link_to 'Back to Articles', articles_path, class: "btn btn-lg btn-info" %>
+  
 </section>
