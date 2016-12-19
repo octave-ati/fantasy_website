@@ -38,6 +38,11 @@ gem 'ckeditor'
 # Use paperclip for article file integration
 gem 'paperclip'
 
+# Use devise gem for user and admin authentification
+gem 'devise'
+
+# Use toastr for flash message display
+gem 'toastr-rails'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
