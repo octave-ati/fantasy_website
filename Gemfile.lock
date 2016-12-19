@@ -201,12 +201,8 @@ PLATFORMS
 DEPENDENCIES
   bootstrap-sass (~> 3.3.6)
   byebug
-<<<<<<< HEAD
-  ckeditor!
-=======
   cancan
   ckeditor
->>>>>>> admin_creation
   coffee-rails (~> 4.2)
   devise
   font-awesome-sass
