@@ -38,6 +38,17 @@ gem 'ckeditor', :git => 'https://github.com/galetahub/ckeditor'
 # Use paperclip for article file integration
 gem 'paperclip'
 
+# Use devise gem for user and admin authentification
+gem 'devise'
+
+# Use toastr for flash message display
+gem 'toastr-rails'
+
+# Use Hirb for databse display
+gem 'hirb'
+
+# Use cancan for restricting access to certain pages
+gem 'cancan'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

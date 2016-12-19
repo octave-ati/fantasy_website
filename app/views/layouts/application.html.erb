@@ -6,6 +6,14 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <% unless flash.empty? %>
+      <script type="text/javascript">
+        <% flash.each do |f| %>
+          <% type = f[0].to_s.gsub('alert', 'error').gsub('notice', 'info') %>
+          toastr['<%= type %>']('<%= f[1] %>');
+        <% end %>
+      </script>
+    <% end %>
   </head>
   <header>
     <nav class="navbar navbar-default navbar-static-top" role="navigation">
@@ -23,8 +31,12 @@
           <%end%>
         </div>
         <div class="navbar-header pull-right">
-          <%= link_to "Log In", root_path, class: "btn btn-default navbar-btn"%>
-          <%= link_to "Sign Up", root_path, class: "btn btn-default navbar-btn"%>
+          <% if user_signed_in? %>
+            <%= link_to "Sign out", destroy_user_session_path, class: "btn btn-default navbar-btn", method: :delete %>
+          <% else %>
+            <%= link_to "Log In", new_user_session_path, class: "btn btn-default navbar-btn"%>
+            <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-default navbar-btn"%>
+          <%end%>
         </div>
         
         <div class="collapse navbar-collapse" id="main-nav-collapse">
