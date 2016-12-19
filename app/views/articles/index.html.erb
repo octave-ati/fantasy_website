@@ -7,15 +7,17 @@
     <article class="card-container">
       <header><h2><%= article.title %></h2></header>
       <%= article.body.html_safe %>
+      <%= link_to 'Read More', article, class: "btn btn-md btn-warning rmbtn" %>
+      <% if can? :manage, Article %>
+      <%= link_to 'Edit', edit_article_path(article) %>
+      <%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %>
+    <%end%>
     </article>
-    <%= link_to 'Show', article %>
-    <%= link_to 'Edit', edit_article_path(article) %>
-    <%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %>
     <% if article != @articles.last %>
       <hr />
     <% end %>
   <% end %>
-  
-  
-  <%= link_to 'New Article', new_article_path %>
+  <% if can? :manage, Article %>
+    <%= link_to 'New Article', new_article_path %>  
+  <% end %>
 </section>
