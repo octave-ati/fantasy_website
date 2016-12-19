@@ -1,3 +1,4 @@
+/*global CKEDITOR*/
 CKEDITOR.editorConfig = function (config) {
 
   config.colorButton_enableAutomatic = true;

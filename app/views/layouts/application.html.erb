@@ -6,14 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <% unless flash.empty? %>
-      <script type="text/javascript">
-        <% flash.each do |f| %>
-          <% type = f[0].to_s.gsub('alert', 'error').gsub('notice', 'info') %>
-          toastr['<%= type %>']('<%= f[1] %>');
-        <% end %>
-      </script>
-    <% end %>
+    
   </head>
   <header>
     <nav class="navbar navbar-default navbar-static-top" role="navigation">
@@ -54,7 +47,20 @@
     </nav>
   </header>
   <body class="<%= controller_name%> <%= action_name %>">
-    
+    <section class="alert-container container">
+      <% unless flash.empty? %>
+        <script type="text/javascript">
+          <% flash.each do |f| %>
+            <% if f[1].match("success") %>
+              <% type = 'success' %>
+            <%else%>
+              <% type = f[0].to_s.gsub('alert', 'error').gsub('notice', 'info') %>
+            <%end%>
+            toastr['<%= type %>']('<%= f[1] %>');
+          <% end %>
+        </script>
+      <% end %>
+    </section>
     <%= yield %>
   </body>
 </html>

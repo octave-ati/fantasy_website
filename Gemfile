@@ -42,7 +42,7 @@ gem 'paperclip'
 gem 'devise'
 
 # Use toastr for flash message display
-gem 'toastr-rails'
+gem 'toastr_rails'
 
 # Use Hirb for databse display
 gem 'hirb'
