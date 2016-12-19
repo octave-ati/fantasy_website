@@ -44,6 +44,9 @@ gem 'devise'
 # Use toastr for flash message display
 gem 'toastr-rails'
 
+# Use Hirb for databse display
+gem 'hirb'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
