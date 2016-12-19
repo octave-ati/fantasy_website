@@ -33,7 +33,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'font-awesome-sass'
 
 # Use CKEditor for article creation
-gem 'ckeditor'
+gem 'ckeditor', :git => 'https://github.com/galetahub/ckeditor'
 
 # Use paperclip for article file integration
 gem 'paperclip'

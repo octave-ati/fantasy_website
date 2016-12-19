@@ -6,11 +6,13 @@ Ckeditor.setup do |config|
   # available as additional gems.
   require 'ckeditor/orm/active_record'
 
+  # Enable colorbuttons
+
   # Allowed image file types for upload.
   # Set to nil or [] (empty array) for all file types
   # By default: %w(jpg jpeg png gif tiff)
   # config.image_file_types = %w(jpg jpeg png gif tiff)
-
+  
   # Allowed flash file types for upload.
   # Set to nil or [] (empty array) for all file types
   # By default: %w(jpg jpeg png gif tiff)
@@ -54,5 +56,5 @@ Ckeditor.setup do |config|
   # JS config url
   # Used when CKEditor CDN enabled
   # By default: "ckeditor/config.js"
-  # config.js_config_url = 'ckeditor/config.js'
+  config.js_config_url = 'ckeditor/config.js'
 end
