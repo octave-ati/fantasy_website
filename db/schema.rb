@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161220174521) do
+ActiveRecord::Schema.define(version: 20161220175551) do
 
   create_table "articles", force: :cascade do |t|
     t.string   "title"
@@ -54,6 +54,7 @@ ActiveRecord::Schema.define(version: 20161220174521) do
     t.integer  "score",      null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.datetime "datetime"
     t.index ["match_id"], name: "index_team_matches_on_match_id"
     t.index ["team_id"], name: "index_team_matches_on_team_id"
   end
