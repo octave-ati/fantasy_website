@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161219135008) do
+ActiveRecord::Schema.define(version: 20161220174521) do
 
   create_table "articles", force: :cascade do |t|
     t.string   "title"
@@ -31,6 +31,40 @@ ActiveRecord::Schema.define(version: 20161219135008) do
     t.datetime "created_at",                   null: false
     t.datetime "updated_at",                   null: false
     t.index ["type"], name: "index_ckeditor_assets_on_type"
+  end
+
+  create_table "games", force: :cascade do |t|
+    t.string   "name",       null: false
+    t.string   "logo_url"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "matches", force: :cascade do |t|
+    t.integer  "game_id"
+    t.datetime "datetime",   null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["game_id"], name: "index_matches_on_game_id"
+  end
+
+  create_table "team_matches", force: :cascade do |t|
+    t.integer  "match_id",   null: false
+    t.integer  "team_id",    null: false
+    t.integer  "score",      null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["match_id"], name: "index_team_matches_on_match_id"
+    t.index ["team_id"], name: "index_team_matches_on_team_id"
+  end
+
+  create_table "teams", force: :cascade do |t|
+    t.string   "name",       null: false
+    t.string   "logo_url"
+    t.integer  "game_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["game_id"], name: "index_teams_on_game_id"
   end
 
   create_table "users", force: :cascade do |t|
